@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Form from './Form'
 
 const StyledStepsColumn = styled.div`
     background-color: var(--white);
@@ -16,7 +17,7 @@ const StyledStepsColumn = styled.div`
     .signin-text-helper,
     .terms-text-helper {
         font-weight: 500;
-        
+
         & > a {
             color: var(--primary);
             text-decoration: none;
@@ -43,6 +44,8 @@ export const StepsColumn = () => {
                     Already have an account?
                     <a href="/">Sign in</a>
                 </p>
+
+                <Form />
 
                 <p className="terms-text-helper">
                     By clicking the "Next" button, you agree to creating a free account, and to <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>.
