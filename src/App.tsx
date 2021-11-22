@@ -1,11 +1,18 @@
 import React from 'react'
-import { StepContainer } from './Components/StepContainer'
+import Hero from './Components/Hero'
+import { Container } from './Components/Container'
+import { StepsColumn } from './Components/StepsColumn'
+import { Row } from './Components/Row'
+import { Col } from './Components/Col'
 
 const App = () => {
     return (
-        <StepContainer>
-            <h1>Let's setup your account.</h1>
-        </StepContainer>
+        <Container>
+            <Row className="signup-row" style={{ height: '100vh' }}>
+                <Col> <StepsColumn /> </Col>
+                <Col className="hero-col" style={{ maxWidth: 630 }}> <Hero /> </Col>
+            </Row>
+        </Container>
     )
 }
 

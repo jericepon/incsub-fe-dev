@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -13,24 +13,52 @@ export const GlobalStyle = createGlobalStyle`
     --warning: #ffc107;
     --danger: #dc3545;
     --font-family: 'Roboto', sans-serif;
+    --body-color: #333333;
+    }
+
+    * {
+        box-sizing: border-box;
     }
     
     body {
         font-size: 1rem;
         font-weight: 400;
-        color: var(--gray-dark);
+        color: var(--body-color);
         line-height: 1.5;
         font-family: var(--font-family);
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
         background-color: var(--white);
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
     }
 
-    .h1, h1 {
-        font-size: calc(1.375rem + 1.5vw);
+    .h1, h1,
+    .h2, h2 {
+        margin-top: 0;
     }
 
-`
+    .h1, h1 {
+        font-size: calc(1.375rem + 1.5vw);
+
+      @media (min-width: 1200px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .h2, h2 {
+        font-size: calc(1.325rem + .9vw);
+
+      @media (min-width: 1200px) {
+        font-size: 2rem;
+      }
+    }
+
+    .h3, h3 {
+        font-size: calc(1.3rem + .6vw);
+
+        @media (min-width: 1200px) {
+            font-size: 1.75rem;
+        }
+    }
+`;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const StepContainer = styled.div`
+export const Container = styled.div`
     min-height: 100vh;
 `
