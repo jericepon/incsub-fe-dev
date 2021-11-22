@@ -7,7 +7,7 @@ import { Col } from './Components/Col'
 
 const App = () => {
     return (
-        <Container>
+        <Container style={{ maxHeight: '90vh' }}>
             <Row style={{ height: '100vh' }}>
                 <Col>
                     <StepsColumn />

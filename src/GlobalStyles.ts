@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import RocketBg from './Images/SpaceX.jpg'
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -31,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: var(--white);
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
+        background: url(${RocketBg}) no-repeat center / cover;
     }
 
     .h1, h1,
