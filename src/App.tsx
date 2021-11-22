@@ -8,9 +8,13 @@ import { Col } from './Components/Col'
 const App = () => {
     return (
         <Container>
-            <Row className="signup-row" style={{ height: '100vh' }}>
-                <Col> <StepsColumn /> </Col>
-                <Col className="hero-col" style={{ maxWidth: 630 }}> <Hero /> </Col>
+            <Row style={{ height: '100vh' }}>
+                <Col>
+                    <StepsColumn />
+                </Col>
+                <Col style={{ maxWidth: 630 }}>
+                    <Hero />
+                </Col>
             </Row>
         </Container>
     )
